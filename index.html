@@ -1,127 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Benjamín García - Portafolio</title>
-  <link rel="stylesheet" href="./styles/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101820">
+  <title>Benjamín García — Software Engineer &amp; Full-Stack Developer</title>
+  <meta name="description" content="Benjamín del Ángel García Hernández. Software Engineer con experiencia en aplicaciones empresariales, React, TypeScript, .NET, Laravel y APIs REST.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Benjamín García — Software Engineer &amp; Full-Stack Developer">
+  <meta property="og:description" content="Aplicaciones empresariales, desarrollo full-stack y una selección de proyectos de backend, APIs y cloud.">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:url" content="https://bgdevportfolio.netlify.app/">
+  <meta property="og:site_name" content="Benjamín García — Portfolio">
+  <link rel="canonical" href="https://bgdevportfolio.netlify.app/">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="./media/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="./scripts/translations.js" defer></script>
+  <script src="./scripts/main.js" defer></script>
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-content">
-      <img src="./media/photo.jpg" alt="Fotografía de Benjamín García" class="profile-pic" />
-      <h1>Benjamín García</h1>
-      <p>Estudiante de Ingeniería de Software</p>
+  <a class="skip-link" href="#main"><span data-i18n="skip">Saltar al contenido</span></a>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="wordmark" href="#inicio" aria-label="Benjamín García, inicio" data-i18n-aria="home"><span>bg<span class="accent">.dev</span></span><span class="wordmark-caption">SOFTWARE ENGINEER</span></a>
+      <nav class="navigation" id="navigation" aria-label="Navegación principal" data-i18n-aria="navLabel">
+        <a href="#sobre-mi"><span data-i18n="navAbout">Sobre mí</span></a>
+        <a href="#experiencia"><span data-i18n="navExperience">Experiencia</span></a>
+        <a href="#proyectos"><span data-i18n="navProjects">Proyectos</span></a>
+        <a href="#contacto"><span data-i18n="navContact">Contacto</span></a>
+      </nav>
+      <div class="nav-actions">
+        <a class="header-contact" href="mailto:benjamindelangel39@gmail.com"><span data-i18n="navContact">Contacto</span><span aria-hidden="true">↗</span></a>
+        <div class="language-switch" role="group" aria-label="Idioma" data-i18n-aria="language" hidden>
+          <button type="button" lang="es" data-language="es" aria-pressed="true" aria-label="Español">ES</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" lang="en" data-language="en" aria-pressed="false" aria-label="English">EN</button>
+        </div>
+        <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false" hidden><span data-i18n="menu">Menú</span><span class="menu-icon" aria-hidden="true"></span></button>
+      </div>
     </div>
   </header>
-
-  <nav class="navbar">
-    <ul>
-      <li><a href="#sobre-mi">Sobre mí</a></li>
-      <li><a href="#habilidades">Habilidades</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <section id="sobre-mi" class="section">
-      <h2>Sobre mí</h2>
-      <p>Apasionado por el desarrollo de software, con enfoque en desarrollo web, APIs seguras y arquitecturas modernas. Interesado en crear soluciones eficientes y escalables.</p>
+  <main id="main">
+    <section class="hero container" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span><span data-i18n="heroEyebrow">DE LA IDEA A LA APLICACIÓN</span></p>
+        <h1 id="hero-title">Benjamín del Ángel<br><span>García Hernández<span class="accent">.</span></span></h1>
+        <p class="hero-role">Software Engineer <span aria-hidden="true">/</span> Full-Stack Developer</p>
+        <p class="hero-description"><span data-i18n="heroDescription">Me gusta involucrarme en el proceso completo de desarrollo: entender qué necesita el usuario, aterrizar los requisitos, planear la solución y llevarla hasta implementación y mantenimiento. He trabajado en ERP, POS y sistemas internos, tocando frontend, backend, integraciones y datos.</span></p>
+        <div class="hero-buttons"><a class="button button-primary" href="#proyectos"><span data-i18n="viewProjects">Ver proyectos</span><span aria-hidden="true">↗</span></a><a class="button button-secondary" href="./media/benjamin-cv.pdf" download><span data-i18n="downloadCV">Descargar CV</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></svg></a></div>
+        <div class="hero-links"><a class="hero-email" href="mailto:benjamindelangel39@gmail.com">benjamindelangel39@gmail.com<span aria-hidden="true">↗</span></a><a class="" href="https://github.com/BenjaminGarcia754" target="_blank" rel="noopener noreferrer">GitHub<span aria-hidden="true">↗</span></a><a class="" href="https://www.linkedin.com/in/benjamin-garc%C3%ADa-b7b596224/" target="_blank" rel="noopener noreferrer">LinkedIn<span aria-hidden="true">↗</span></a><span class="hero-location"><span aria-hidden="true">⌖</span> <span data-i18n="xalapa">Xalapa, Veracruz, México</span></span></div>
+      </div>
+      <div class="hero-bottom mono"><span data-i18n="heroBottom">CÓDIGO CON CONTEXTO. SOLUCIONES CON PROPÓSITO.</span><a href="#sobre-mi"><span data-i18n="explore">CONOCE MI TRABAJO</span> <span aria-hidden="true">↓</span></a></div>
     </section>
-
-    <section id="habilidades" class="section">
-      <h2>Habilidades Técnicas</h2>
-      <ul class="skills">
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>PHP Vanilla</li>
-        <li>Laravel</li>
-        <li>Node.js</li>
-        <li>.NET / C#</li>
-        <li>SQL Server / MySQL</li>
-        <li>Git / GitHub</li>
-      </ul>
-      <h3>Habilidades Blandas</h3>
-      <ul class="skills">
-        <li>Comunicación efectiva</li>
-        <li>Trabajo en equipo</li>
-        <li>Resolución de problemas</li>
-        <li>Gestión del tiempo</li>
-        <li>Adaptabilidad</li>
-      </ul>
+    <section class="section container about" id="sobre-mi" aria-labelledby="about-title">
+      <div><p class="eyebrow section-index"><span data-i18n="aboutLabel">01 / SOBRE MÍ</span></p><h2 id="about-title"><span data-i18n="aboutTitle">Software para necesidades reales.</span></h2></div>
+      <div class="about-content"><p class="lead"><span data-i18n="aboutLead">Soy Software Engineer con experiencia práctica construyendo y manteniendo aplicaciones empresariales, tanto en frontend como en backend.</span></p><p><span data-i18n="aboutDescription">He trabajado en sistemas administrativos, ERP, POS y gestión de contenidos: nuevas funcionalidades, integraciones y modernización de aplicaciones existentes. Me interesa entender el problema, cuidar la estructura del código y colaborar para llevar la solución a producción.</span></p><div class="about-principles"><span data-i18n="principleOne">Desarrollo full-stack</span><span data-i18n="principleTwo">Arquitectura de software</span><span data-i18n="principleThree">Calidad y mantenimiento</span></div></div>
     </section>
-
-    <section id="proyectos" class="section">
-      <h2>Proyectos Destacados</h2>
-
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>StudyTech - Web API</h3>
-          <p>Plataforma educativa similar a Udemy. Ofrece autenticación segura usando ASP.NET Identity con JWT.</p>
-          <a href="https://github.com/BenjaminGarcia754/WebApiMediaDF" target="_blank">Ver en GitHub</a>
-        </div>
-
-        <div class="project-card">
-          <h3>StudyTech - Procesamiento de Video (gRPC)</h3>
-          <p>Servidor backend que procesa videos con gRPC y los sube automáticamente a AWS S3.</p>
-          <a href="https://github.com/BenjaminGarcia754/TransferGrpc" target="_blank">Ver en GitHub</a>
-        </div>
-
-        <div class="project-card">
-          <h3>Juego del Ahorcado</h3>
-          <p>Aplicación cliente-servidor con WCF y WPF. Utiliza arquitectura por capas y EF Core para persistencia.</p>
-          <a href="https://github.com/BenjaminGarcia754/Ahorcado_Services" target="_blank">Ver en GitHub</a>
-        </div>
-
-        <div class="project-card">
-          <h3>SACDS - Donación de Sangre</h3>
-          <p>Sistema de agendamiento para donadores de sangre. Desarrollado con ASP.NET Core, EF Core y AutoMapper.</p>
-          <a href="https://github.com/BenjaminGarcia754/SACDS" target="_blank">Ver en GitHub</a>
-        </div>
-
-        <div class="project-card">
-          <h3>Explorador de Cocteles</h3>
-          <p>Aplicación web para explorar bebidas usando la API pública de TheCocktailDB.</p>
-          <a href="https://dsw-cocktails.netlify.app/" target="_blank">Ver</a>
-        </div>
-
-        <div class="project-card">
-          <h3>Consulta del Clima</h3>
-          <p>Página web con HTML, CSS y JS conectada a la API de OpenWeather para mostrar clima actual y pronóstico.</p>
-          <a href="https://neon-shortbread-d9d001.netlify.app/" target="_blank">Ver</a>
-        </div>
-
-        <div class="project-card">
-          <h3>API de Ventas Seguras</h3>
-          <p>Backend con Node.js para un sistema de ventas en línea con autenticación segura y buenas prácticas.</p>
-          <a href="https://github.com/BenjaminGarcia754/ps-backendSeguro" target="_blank">Ver en GitHub</a>
-        </div>
-
-        <div class="project-card">
-          <h3>Sistema de Registro de Mamíferos Marinos Varados</h3>
-          <p>Pruebas automatizadas con Selenium sobre plataforma web en .NET y JS para el registro de mamíferos varados.</p>
-          <em>(Código no disponible por confidencialidad del proyecto)</em>
-        </div>
+    <section class="section container" id="experiencia" aria-labelledby="experience-title">
+      <div class="section-heading"><div><p class="eyebrow section-index"><span data-i18n="experienceLabel">02 / EXPERIENCIA</span></p><h2 id="experience-title"><span data-i18n="experienceTitle">Del código a la operación.</span></h2></div><p><span data-i18n="experienceIntro">Aplicaciones que evolucionan. Experiencia en todo su ciclo de vida.</span></p></div>
+      <div class="experience-list">
+        <article class="experience-item"><div class="experience-date"><span class="current-badge"><span data-i18n="current">ACTUALMENTE</span></span><p><time datetime="2025-02"><span data-i18n="alasStart">Feb. 2025</span></time> — <span data-i18n="present">Presente</span></p><span><span data-i18n="remote">Remoto</span></span></div><div class="experience-content"><h3>ALAS</h3><p class="experience-role"><span data-i18n="alasRole">Software Developer · Por proyecto</span></p><ul><li><span data-i18n="alasOne">Desarrollo y mantenimiento de sistemas administrativos y de gestión de contenidos con C#, .NET y Entity Framework Core.</span></li><li><span data-i18n="alasTwo">Nuevos módulos, acceso a datos relacionales y modernización de aplicaciones, respetando los flujos de trabajo existentes.</span></li></ul><ul class="tags"><li>C#</li><li>.NET</li><li>Entity Framework Core</li><li>ORM</li></ul></div></article>
+        <article class="experience-item"><div class="experience-date"><p><time datetime="2025-07"><span data-i18n="softsetiStart">Jul. 2025</span></time> — <time datetime="2026-05"><span data-i18n="softsetiEnd">May. 2026</span></time></p><span><span data-i18n="softsetiLocation">Monterrey, Nuevo León, México · Remoto</span></span></div><div class="experience-content"><h3>Softseti</h3><p class="experience-role">Software Engineering Intern</p><ul><li><span data-i18n="softsetiOne">Desarrollo de ERP, POS y Back Office con React, TypeScript, Angular y Laravel bajo Domain-Driven Design.</span></li><li><span data-i18n="softsetiTwo">Módulos de productos, compras, ajustes, suscripciones y flujos de punto de venta. Integración de APIs REST, MySQL y funcionalidad multi-tenant.</span></li><li><span data-i18n="softsetiThree">Monitoreo con Grafana, diagnóstico y soporte en producción. Colaboración con Git Flow, Jira y Confluence.</span></li></ul><ul class="tags"><li>React</li><li>TypeScript</li><li>Angular</li><li>Laravel</li><li>DDD</li><li>MySQL</li></ul></div></article>
+        <article class="experience-item"><div class="experience-date"><p><time datetime="2025-02"><span data-i18n="iibStart">Feb. 2025</span></time> — <time datetime="2025-08"><span data-i18n="iibEnd">Ago. 2025</span></time></p><span><span data-i18n="xalapa">Xalapa, Veracruz, México</span></span></div><div class="experience-content"><h3>Universidad Veracruzana</h3><p class="experience-institute"><span data-i18n="iibInstitute">Instituto de Investigaciones Biológicas</span></p><p class="experience-role"><span data-i18n="iibRole">Calidad de software y despliegue · Servicio social</span></p><ul><li><span data-i18n="iibOne">Pruebas automatizadas y end-to-end con Selenium y .NET; validación funcional y de integración.</span></li><li><span data-i18n="iibTwo">Despliegue de aplicaciones y bases de datos con Plesk en la infraestructura del instituto.</span></li></ul><ul class="tags"><li>Selenium</li><li>.NET</li><li>E2E Testing</li><li>Plesk</li></ul></div></article>
       </div>
     </section>
-
-    <section id="contacto" class="section">
-      <h2>Contacto</h2>
-      <p>Email: <a href="mailto:benjamindelangel39@gmail.com">benjamindelangel39@gmail.com</a></p>
-      <p>Teléfono: <a href="tel:2282517991">2282517991</a></p>
-      <p>
-        <a href="https://github.com/BenjaminGarcia754" target="_blank">GitHub</a> |
-        <a href="https://www.linkedin.com/in/benjamin-garcia754" target="_blank">LinkedIn</a>
-      </p>
+    <section class="section stack-section" id="habilidades" aria-labelledby="stack-title"><div class="container">
+      <div class="section-heading"><div><p class="eyebrow section-index">03 / TECH STACK</p><h2 id="stack-title"><span data-i18n="stackTitle">Las herramientas detrás.</span></h2></div><p><span data-i18n="stackIntro">Tecnologías, patrones y prácticas que forman parte de mi trabajo.</span></p></div>
+      <div class="stack-grid"><article class="stack-card"><div class="stack-card-heading"><span class="mono accent" aria-hidden="true">&lt;/&gt;</span><h3>Frontend</h3></div><ul class="tags"><li>React</li><li>TypeScript</li><li>Angular</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li></ul></article>
+      <article class="stack-card"><div class="stack-card-heading"><span class="mono accent" aria-hidden="true">{}</span><h3>Backend</h3></div><ul class="tags"><li>C#</li><li>.NET</li><li>Entity Framework Core</li><li>Node.js</li><li>Express.js</li><li>Laravel</li><li>PHP</li><li>REST APIs</li></ul></article>
+      <article class="stack-card"><div class="stack-card-heading"><span class="mono accent" aria-hidden="true">▤</span><h3><span data-i18n="databases">Bases de datos</span></h3></div><ul class="tags"><li>SQL</li><li>MySQL</li><li><span data-i18n="relational">Bases de datos relacionales</span></li><li>ORM</li></ul></article>
+      <article class="stack-card"><div class="stack-card-heading"><span class="mono accent" aria-hidden="true">⊞</span><h3><span data-i18n="architecture">Arquitectura</span></h3></div><ul class="tags"><li>Domain-Driven Design (DDD)</li><li>Clean Architecture</li><li>Repository Pattern</li><li>MVC</li></ul></article>
+      <article class="stack-card"><div class="stack-card-heading"><span class="mono accent" aria-hidden="true">✓</span><h3><span data-i18n="testing">Testing y calidad</span></h3></div><ul class="tags"><li>Selenium</li><li><span data-i18n="automated">Pruebas automatizadas</span></li><li><span data-i18n="functional">Pruebas funcionales</span></li><li><span data-i18n="integration">Pruebas de integración</span></li><li>End-to-End Testing</li></ul></article>
+      <article class="stack-card"><div class="stack-card-heading"><span class="mono accent" aria-hidden="true">⌘</span><h3><span data-i18n="tools">Herramientas</span></h3></div><ul class="tags"><li>Git</li><li>GitHub</li><li>Postman</li><li>Jira</li><li>Confluence</li><li>Plesk</li><li>AWS</li><li>Grafana</li></ul></article></div>
+    </div></section>
+    <section class="section container" id="proyectos" aria-labelledby="projects-title">
+      <div class="section-heading"><div><p class="eyebrow section-index"><span data-i18n="projectsLabel">04 / PROYECTOS DESTACADOS</span></p><h2 id="projects-title"><span data-i18n="projectsTitle">Una selección de mi trabajo.</span></h2></div><a class="text-link" href="https://github.com/BenjaminGarcia754" target="_blank" rel="noopener noreferrer"><span data-i18n="moreGithub">Más en GitHub</span><span aria-hidden="true">↗</span></a></div>
+      <div class="projects-grid">
+        <article class="project-card" aria-labelledby="project-api"><div class="project-visual visual-api" aria-hidden="true"><span class="mono visual-category">IDENTITY / AUTHENTICATION</span><div class="api-flow"><span>USER</span><span class="flow-line">→</span><span class="api-node">JWT</span><span class="flow-line">→</span><span>API</span></div><span class="mono visual-caption">ASP.NET Identity</span></div><div class="project-content"><p class="project-kicker mono">01 / WEB API</p><h3 id="project-api">StudyTech — Web API</h3><p><span data-i18n="projectApi">API para una plataforma educativa similar a Udemy, con autenticación segura mediante ASP.NET Identity y JWT.</span></p><ul class="tags"><li>ASP.NET</li><li>Identity</li><li>JWT</li></ul><a class="project-link" href="https://github.com/BenjaminGarcia754/WebApiMediaDF" target="_blank" rel="noopener noreferrer"><span data-i18n="viewCode">Ver código</span><span class="sr-only"> — StudyTech — Web API</span><span aria-hidden="true">↗</span></a></div></article>
+        <article class="project-card" aria-labelledby="project-grpc"><div class="project-visual visual-grpc" aria-hidden="true"><span class="mono visual-category">VIDEO PROCESSING / CLOUD</span><div class="grpc-flow"><span class="file-symbol">▶</span><span class="flow-line">→</span><span class="grpc-node">gRPC</span><span class="flow-line">→</span><span class="cloud-node">S3</span></div><span class="mono visual-caption">Process. Transfer. Store.</span></div><div class="project-content"><p class="project-kicker mono">02 / CLOUD &amp; BACKEND</p><h3 id="project-grpc">StudyTech — Video Processing</h3><p><span data-i18n="projectGrpc">Servidor backend que procesa videos mediante gRPC y los sube automáticamente a AWS S3.</span></p><ul class="tags"><li>gRPC</li><li>AWS S3</li><li>Backend</li></ul><a class="project-link" href="https://github.com/BenjaminGarcia754/TransferGrpc" target="_blank" rel="noopener noreferrer"><span data-i18n="viewCode">Ver código</span><span class="sr-only"> — StudyTech — Video Processing</span><span aria-hidden="true">↗</span></a></div></article>
+        <article class="project-card" aria-labelledby="project-sacds"><div class="project-visual visual-sacds" aria-hidden="true"><span class="mono visual-category">SCHEDULING / DATA</span><div class="schedule-visual"><span class="schedule-mark">+</span><div class="calendar-grid"><i></i><i></i><i></i><i></i><i></i><i></i><i class="selected">✓</i><i></i><i></i><i></i><i></i><i></i></div><span class="mono">SACDS</span></div><span class="mono visual-caption">ASP.NET Core × Entity Framework</span></div><div class="project-content"><p class="project-kicker mono"><span data-i18n="projectSacdsCategory">03 / APLICACIÓN WEB</span></p><h3 id="project-sacds"><span data-i18n="projectSacdsTitle">SACDS — Donación de sangre</span></h3><p><span data-i18n="projectSacds">Sistema de agendamiento para donadores de sangre, desarrollado con ASP.NET Core, Entity Framework Core y AutoMapper.</span></p><ul class="tags"><li>ASP.NET Core</li><li>EF Core</li><li>AutoMapper</li></ul><a class="project-link" href="https://github.com/BenjaminGarcia754/SACDS" target="_blank" rel="noopener noreferrer"><span data-i18n="viewCode">Ver código</span><span class="sr-only"> — <span data-i18n="projectSacdsTitle">SACDS — Donación de sangre</span></span><span aria-hidden="true">↗</span></a></div></article>
+        <article class="project-card" aria-labelledby="project-sales"><div class="project-visual visual-sales" aria-hidden="true"><span class="mono visual-category">COMMERCE / BACKEND</span><div class="sales-visual"><span class="sales-bracket">{</span><div><span class="mono">Node.js</span><span class="sales-line"></span><span class="sales-line short"></span></div><span class="shield-symbol">✓</span><span class="sales-bracket">}</span></div><span class="mono visual-caption">Authentication at the core.</span></div><div class="project-content"><p class="project-kicker mono">04 / BACKEND API</p><h3 id="project-sales"><span data-i18n="projectSalesTitle">API de ventas seguras</span></h3><p><span data-i18n="projectSales">Backend con Node.js para un sistema de ventas en línea, con autenticación segura y buenas prácticas de desarrollo.</span></p><ul class="tags"><li>Node.js</li><li>Backend</li><li><span data-i18n="authentication">Autenticación</span></li></ul><a class="project-link" href="https://github.com/BenjaminGarcia754/ps-backendSeguro" target="_blank" rel="noopener noreferrer"><span data-i18n="viewCode">Ver código</span><span class="sr-only"> — <span data-i18n="projectSalesTitle">API de ventas seguras</span></span><span aria-hidden="true">↗</span></a></div></article>
+      </div>
+      <details class="other-projects"><summary><span><span class="mono accent" aria-hidden="true">+</span> <span data-i18n="otherProjects">Otros proyectos y colaboraciones</span></span><span class="mono projects-count">04</span></summary><div class="other-projects-grid"><article><h3><span data-i18n="hangmanTitle">Juego del Ahorcado</span></h3><p><span data-i18n="hangmanDescription">Aplicación cliente-servidor con WCF y WPF, arquitectura por capas y EF Core para persistencia.</span></p><a class="text-link" href="https://github.com/BenjaminGarcia754/Ahorcado_Services" target="_blank" rel="noopener noreferrer">GitHub <span class="sr-only">— <span data-i18n="hangmanLink">Juego del Ahorcado</span></span><span aria-hidden="true">↗</span></a></article>
+      <article><h3><span data-i18n="cocktailTitle">Explorador de cocteles</span></h3><p><span data-i18n="cocktailDescription">Aplicación web para explorar bebidas a través de la API pública de TheCocktailDB.</span></p><a class="text-link" href="https://dsw-cocktails.netlify.app/" target="_blank" rel="noopener noreferrer"><span data-i18n="liveDemo">Ver demo</span><span class="sr-only">— <span data-i18n="cocktailLink">Explorador de cocteles</span></span><span aria-hidden="true">↗</span></a></article>
+      <article><h3><span data-i18n="weatherTitle">Consulta del clima</span></h3><p><span data-i18n="weatherDescription">Web con HTML, CSS y JavaScript conectada a OpenWeather para consultar el clima actual y el pronóstico.</span></p><a class="text-link" href="https://neon-shortbread-d9d001.netlify.app/" target="_blank" rel="noopener noreferrer"><span data-i18n="liveDemo">Ver demo</span><span class="sr-only">— <span data-i18n="weatherLink">Consulta del clima</span></span><span aria-hidden="true">↗</span></a></article>
+      <article><h3><span data-i18n="marineTitle">Registro de mamíferos marinos varados</span></h3><p><span data-i18n="marineDescription">Pruebas automatizadas con Selenium para una plataforma web desarrollada con .NET y JavaScript.</span></p><span class="confidential"><span data-i18n="confidential">Código no disponible por confidencialidad.</span></span></article></div></details>
     </section>
+    <section class="section container education" id="educacion" aria-labelledby="education-title">
+      <div><p class="eyebrow section-index"><span data-i18n="educationLabel">05 / FORMACIÓN</span></p><h2 id="education-title"><span data-i18n="educationTitle">Las bases. Y lo que sigue.</span></h2></div>
+      <div class="education-grid"><article class="education-card"><span class="mono accent">2019 — 2026</span><h3>Universidad Veracruzana</h3><p><span data-i18n="degree">Licenciatura en Ingeniería de Software</span></p><span class="education-location"><span data-i18n="xalapa">Xalapa, Veracruz, México</span></span></article><article class="languages-card"><h3><span data-i18n="languages">Idiomas</span></h3><dl><div><dt><span data-i18n="spanish">Español</span></dt><dd><span data-i18n="native">Nativo</span></dd></div><div><dt><span data-i18n="english">Inglés</span></dt><dd><span data-i18n="intermediate">B1 / Intermedio</span></dd></div></dl></article></div>
+    </section>
+    <section class="contact-section" id="contacto" aria-labelledby="contact-title"><div class="container contact-inner">
+      <div><p class="eyebrow section-index"><span data-i18n="contactLabel">06 / CONTACTO</span></p><h2 id="contact-title"><span data-i18n="contactTitle">El próximo proyecto empieza con una conversación.</span></h2><p><span data-i18n="contactDescription">¿Buscas un Junior Software Engineer o Full-Stack Developer para tu equipo? Hablemos.</span></p><a class="contact-email" href="mailto:benjamindelangel39@gmail.com">benjamindelangel39@gmail.com <span aria-hidden="true">↗</span></a></div>
+      <div class="contact-links"><a class="" href="https://www.linkedin.com/in/benjamin-garc%C3%ADa-b7b596224/" target="_blank" rel="noopener noreferrer">LinkedIn<span aria-hidden="true">↗</span></a><a class="" href="https://github.com/BenjaminGarcia754" target="_blank" rel="noopener noreferrer">GitHub<span aria-hidden="true">↗</span></a><a href="./media/benjamin-cv.pdf" download><span data-i18n="downloadCV">Descargar CV</span><span aria-hidden="true">↓</span></a><a class="phone-link" href="tel:2282517991">228 251 7991<span aria-hidden="true">↗</span></a></div>
+    </div></section>
   </main>
-
-  <footer>
-    <p>&copy; 2025 Benjamín García. Todos los derechos reservados.</p>
-  </footer>
+  <footer class="site-footer container"><a class="wordmark" href="#inicio" aria-label="Benjamín García, inicio" data-i18n-aria="home">bg<span class="accent">.dev</span></a><p>© <span id="year">2026</span> Benjamín García. <span data-i18n="rights">Todos los derechos reservados.</span></p><a href="#inicio" class="back-top"><span data-i18n="backTop">Volver arriba</span> <span aria-hidden="true">↑</span></a></footer>
 </body>
 </html>
